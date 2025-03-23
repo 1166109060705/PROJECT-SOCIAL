@@ -21,12 +21,6 @@ export const createPost = async (req, res) => {
 			img = uploadedResponse.secure_url;
 		}
 
-		if (video) {
-			const uploadedResponse = await cloudinary.uploader.upload(video);
-			video = uploadedResponse.secure_url;
-		}
-		
-
 		const newPost = new Post({
 			user: userId,
 			text,
