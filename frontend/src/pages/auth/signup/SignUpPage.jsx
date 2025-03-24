@@ -48,7 +48,7 @@ const SignUpPage = () => {
 	});
 
 	const handleSubmit = (e) => {
-		e.preventDefault(); // page won't reload
+		e.preventDefault();
 		mutate(formData);
 	};
 
